@@ -1,0 +1,152 @@
+/* Generella stilar */
+body {
+    font-family: 'Roboto', sans-serif; 
+    background-color: #f0f4f8; 
+    color: #222;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    color: darkblue;
+    margin: 20px 0;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+/* Header layout */
+#header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    gap: 20px;
+    width: 90%;
+}
+
+#imgBox {
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+    border: 4px solid darkblue; 
+    padding: 12px;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#imgBox img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Knappar */
+#button-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+button {
+    background-color: #003366;
+    color: white;
+    font-size: 1rem;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #00509e;
+    transform: scale(1.05);
+}
+
+/* Hexagoner */
+#hexGrid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px auto;
+    max-width: 600px;
+    padding: 20px;
+}
+
+.hex {
+    width: 100px;
+    height: 100px;
+    background-color: darkblue; 
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease;
+}
+
+.hex:hover {
+    transform: translateY(-5px) scale(1.05);
+}
+
+.hex a {
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    line-height: 1.2;
+    text-overflow: ellipsis;
+    padding: 0 5px;
+    white-space: nowrap;
+    text-align: center;
+    display: block;
+    max-width: 80%;
+    overflow: hidden;
+}
+
+/* Använder media queries för responsiv design */
+@media (max-width: 768px) {
+    #header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #imgBox {
+        width: 50%;
+    }
+
+    #hexGrid {
+        max-width: 100%;
+    }
+
+    .hex {
+        width: 80px;
+        height: 80px;
+    }
+
+    button {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+}
