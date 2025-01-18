@@ -1,0 +1,17 @@
+[
+    {
+      "name": "Java",
+      "level": "Budding",
+      "categories": ["Programspråk", "Webutveckling"],
+      "description": "Det första programspråket jag arbetade i",
+      "yearsOFExperience": "1 år studier"
+    },
+    {
+      "name": "Pedagogiska färdigheter",
+      "level": "Avancerad",
+      "categories": ["Tala", "Scenvana"],
+      "description": "Diverse pedagogiska färdigheter",
+      "yearsOFExperience": "15 år som lärare"
+    }
+  ]
+  
