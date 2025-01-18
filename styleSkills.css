@@ -1,0 +1,184 @@
+/* Generella stilar */
+body {
+    font-family: 'Roboto', sans-serif; 
+    background-color: #f0f4f8; 
+    color: #222;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    color: darkblue;
+    margin: 20px 0;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+/* Header layout */
+header {
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px;
+    background-color: #003366;
+}
+
+button {
+    background-color: #003366;
+    color: white;
+    font-size: 1rem;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #00509e;
+    transform: scale(1.05);
+}
+
+/* Bild layout */
+#imgBox {
+    margin: 0 auto;
+    width: 150px;
+    height: 150px;
+    border: 4px solid darkblue; 
+    padding: 12px;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#imgBox img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Färdigheter layout */
+#skillbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    border: 2px solid #003366;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    margin: 40px auto;
+}
+
+#skill-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+#skillUl {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Individuella färdighetsrutor */
+.skill-item {
+    background-color: white;
+    padding: 20px;
+    width: 80%;
+    border: 2px solid #003366;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: box-shadow 0.3s ease;
+}
+
+.skill-item:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.skill-item h3 {
+    font-size: 1.5rem;
+    color: #003366;
+}
+
+.skill-item p {
+    font-size: 1rem;
+    color: #555;
+    margin: 5px 0;
+}
+
+/* Ny stil för li, h3 och p för färdighetslistan */
+#skillUl li {
+    background-color: white;
+    padding: 15px;
+    margin: 10px 0;
+    border: 2px solid #003366;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    text-align: left;
+}
+
+#skillUl li h3 {
+    font-size: 1.4rem;
+    color: #003366;
+    margin-bottom: 10px;
+}
+
+#skillUl li p {
+    font-size: 1rem;
+    color: #555;
+    margin: 5px 0;
+}
+
+/* För mobiler */
+@media (max-width: 768px) {
+    #imgBox {
+        width: 100px;
+        height: 100px;
+    }
+
+    #skill-list {
+        padding: 5px;
+    }
+
+    .skill-item {
+        width: 90%;
+    }
+
+    button {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+
+    #skillbox {
+        width: 95%;
+        padding: 15px;
+    }
+
+    #skillUl li {
+        width: 100%;
+        padding: 10px;
+    }
+}
